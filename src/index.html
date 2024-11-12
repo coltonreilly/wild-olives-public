@@ -3,11 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./output.css" />
     <title>Document</title>
   </head>
   <body>
-    <nav class="relative p-6 bg-white mr-6 md:mx-10">
+    <nav class="sticky shadow-sm top-0 z-10 p-6 bg-white pr-10 md:px-16">
       <!-- flex container -->
       <div class="flex items-center justify-between">
         <!-- logo -->
@@ -15,7 +22,7 @@
           <img src="/images/logo.png" class="h-[63px] w-[80px]" alt="" />
         </div>
         <div
-          class="hidden space-x-10 uppercase font-raleway tracking-widest font-semibold items-center md:flex"
+          class="hidden space-x-14 uppercase font-raleway tracking-widest font-semibold items-center md:flex"
         >
           <a href="#" class="hover:text-oliveBrown">Menu</a>
           <a href="#" class="hover:text-oliveBrown">Reservations</a>
@@ -69,7 +76,7 @@
     <!-- hours -->
     <section id="hours">
       <!-- business name & address -->
-      <div class="flex flex-col justify-center text-center pt-12">
+      <div class="flex flex-col justify-center text-center pt-16">
         <h1
           class="font-raleway uppercase font-medium pl-4 tracking-bigWide text-6xl md:text-7xl"
         >
@@ -91,7 +98,7 @@
       </div>
 
       <!-- business hours & buttons -->
-      <div class="flex justify-center space-x-20 py-12">
+      <div class="flex justify-center space-x-20 py-16">
         <div class="flex flex-col text-center w-44">
           <h3 class="text-xl uppercase font-raleway font-bold">Open Daily</h3>
           <h4 class="font-leight font-montserrat">4PM - 10PM</h4>
@@ -109,7 +116,7 @@
           >Reservations</a
         >
       </div>
-      <div class="flex flex-col w-[100px] text-center mx-auto pb-12">
+      <div class="flex flex-col w-[100px] text-center mx-auto pb-16">
         <a
           href="/dinner.html"
           class="p-2 px-3 text-white bg-black hover:bg-oliveBrown rounded-sm font-raleway uppercase font-semibold tracking-widest"
@@ -117,6 +124,284 @@
         >
       </div>
     </section>
+
+    <!-- cork banner -->
+    <section id="corkBanner">
+      <div class="relative overflow-hidden h-[500px]">
+        <div
+          class="absolute inset-0 bg-no-repeat bg-cover bg-fixed parallax-bg"
+          style="background-image: url(/images/home/corks.jpg)"
+        >
+          <div class="flex justify-center">
+            <img
+              class="absolute items-center top-24"
+              src="/images/home/cork-overlay.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- vip form -->
+    <section id="vipForm">
+      <div class="flex justify-center text-center align-center pt-16">
+        <h2
+          class="font-raleway uppercase font-semibold pl-4 tracking-bigWide text-5xl md:text-6xl"
+        >
+          Vip List
+        </h2>
+      </div>
+      <hr class="mx-auto h-px w-[300px] my-3 bg-black border-0" />
+      <div class="flex flex-col text-center mb-3">
+        <form class="mx-auto mt-1">
+          <input
+            type="email"
+            class="border border-black w-96 h-10 pl-2"
+            name="email"
+            placeholder="email@address.com"
+            required
+          />
+        </form>
+      </div>
+      <div class="flex flex-col w-[100px] text-center mx-auto">
+        <a
+          href=""
+          class="p-2 px-3 mb-16 text-white bg-black hover:bg-oliveBrown rounded-sm font-raleway uppercase font-semibold tracking-widest"
+          >Join</a
+        >
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section id="gallery">
+      <div class="justify-between gap-2 md:flex">
+        <div>
+          <img
+            class="h-full max-w-full hover:opacity-90 hover:brightness-90 mb-2"
+            src="/images/home/cheers.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-full max-w-full hover:opacity-90 hover:brightness-90 mb-2"
+            src="/images/home/wo-barrel.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-full max-w-full hover:opacity-90 hover:brightness-90 mb-2"
+            src="/images/home/cheers-new.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="justify-between gap-2 hidden mt-2 md:flex">
+        <div>
+          <img
+            class="h-full max-w-full hover:opacity-90 hover:brightness-90 mb-2"
+            src="/images/home/big-cheeseboard.JPG"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-full max-w-full hover:opacity-90 hover:brightness-90 mb-2"
+            src="/images/home/corks_edited.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full hover:opacity-90 hover:brightness-90"
+            src=""
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- owners -->
+    <section id="ownerInfo">
+      <div class="relative flex justify-between my-16">
+        <img
+          src="/images/home/chris-and-slayde.JPG"
+          class="h-[742px] w-[920px] rounded-r-sm hidden md:block"
+          alt=""
+        />
+        <div
+          class="relative inset-0 flex flex-col justify-center align-center text-center mx-auto"
+        >
+          <h2
+            class="text-5xl pl-4 font-raleway uppercase font-semibold tracking-bigWide"
+          >
+            Stay Wild
+          </h2>
+          <hr class="mx-auto h-px w-[400px] my-4 bg-black border-0" />
+          <p class="mb-7 font-montserrat w-[500px]">
+            Chris Trovas & Slayde Martin bring you Wild Olives Bistro on 30a.
+            Everything from our wine selection, cocktails, and ambiance will
+            remind you of your favorite old-world travels and the updated
+            amenities of the new world. We can't wait to welcome you into our
+            kitchen. Wild Olives has always been like entering the home of the
+            Trovas family. Think of this as the same homey, familial experience,
+            with a renovation!
+          </p>
+          <img
+            src="/images/logo.png"
+            class="h-[110px] w-[138px] mx-auto mb-8"
+            alt=""
+          />
+          <div class="flex flex-col w-[140px] text-center mx-auto">
+            <a
+              href="/our-story.html"
+              class="p-2 px-3 mb-3 text-white bg-black hover:bg-oliveBrown rounded-sm font-raleway uppercase font-semibold tracking-widest"
+              >Our Story</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bottle banner -->
+    <section id="bottleBanner">
+      <div class="relative overflow-hidden h-[500px]">
+        <div
+          class="absolute inset-0 bg-no-repeat bg-cover bg-fixed parallax-bg"
+          style="background-image: url(/images/home/liquor-wall.jpg)"
+        >
+          <div class="flex justify-center text-center">
+            <h2
+              class="absolute text-white font-raleway font-bold leading-relaxed italic border-black textShadow top-44 md:top-48 text-4xl md:text-6xl md:w-[1050px]"
+            >
+              "A little more than enough to drink; for thirst is a dangerous
+              thing.”
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- instagram -->
+    <section id="ig">
+      <div class="flex flex-col text-center my-16">
+        <h2
+          class="text-5xl pl-4 font-raleway uppercase font-semibold tracking-bigWide"
+        >
+          Follow Us
+        </h2>
+        <hr class="mx-auto h-px w-[420px] my-3 bg-black border-0" />
+        <a href="https://instagram.com/wildolives30a" target="_blank"
+          ><h3 class="text-2xl font-raleway italic font-light tracking-widest">
+            @wildolives30a
+          </h3></a
+        >
+      </div>
+      <div class="flex justify-between flex-col md:flex-row">
+        <a href="https://www.instagram.com/wildolives30a/" target="_blank">
+          <img
+            src="/images/home/pankcakes-espresso.jpg"
+            class="h-full w-full pb-2 hover:opacity-90 hover:brightness-90 rounded-r-sm md:h-[400px] md:w-[400px]"
+            alt=""
+          />
+        </a>
+        <a href="https://www.instagram.com/wildolives30a/" target="_blank">
+          <img
+            src="/images/home/wine-boards.jpg"
+            class="h-full w-full pb-2 hover:opacity-90 hover:brightness-90 rounded-sm md:h-[400px] md:w-[400px]"
+            alt=""
+          />
+        </a>
+        <a href="https://www.instagram.com/wildolives30a/" target="_blank">
+          <img
+            src="/images/home/bacon-drink.jpg"
+            class="h-full w-full pb-2 hover:opacity-90 hover:brightness-90 rounded-sm md:h-[400px] md:w-[400px]"
+            alt=""
+          />
+        </a>
+        <a href="https://www.instagram.com/wildolives30a/" target="_blank">
+          <img
+            src="/images/home/fall-hours.jpg"
+            class="h-full w-full pb-2 hover:opacity-90 hover:brightness-90 rounded-sm md:h-[400px] md:w-[400px]"
+            alt=""
+          />
+        </a>
+        <a href="https://www.instagram.com/wildolives30a/" target="_blank">
+          <img
+            src="/images/home/bottle-rack.jpg"
+            class="h-full w-full hover:opacity-90 hover:brightness-90 rounded-l-sm md:h-[400px] md:w-[400px]"
+            alt=""
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="sticky mx-auto py-16 bg-white">
+      <div class="flex justify-center mx-8 gap-3">
+        <a href="https://facebook.com/wildolives30a" target="_blank"
+          ><i
+            class="text-4xl fa-brands fa-square-facebook"
+            style="color: #000000"
+          ></i>
+        </a>
+        <a href="https://instagram.com/wildolives30a" target="_blank"
+          ><i
+            class="text-4xl fa-brands fa-square-instagram"
+            style="color: #000000"
+          ></i
+        ></a>
+        <a href="https://x.com/wildoliveswcb" target="_blank"
+          ><i
+            class="text-4xl fa-brands fa-square-x-twitter"
+            style="color: #000000"
+          ></i
+        ></a>
+        <a href="https://g.co/kgs/fFjGruF" target="_blank"
+          ><i
+            class="text-4xl fa-brands fa-square-google-plus"
+            style="color: #000000"
+          ></i
+        ></a>
+      </div>
+      <div class="pt-4 flex justify-center mx-8">
+        <p class="text-sm">&copyCopyright. All rights reserved.</p>
+      </div>
+
+      <!-- <hr class="hidden h-px mx-8 my-12 bg-black border-0 md:flex" />
+
+      <div class="hidden justify-between mx-8 md:flex">
+        <div
+          class="flex flex-col uppercase font-raleway tracking-widest font-semibold text-start w-[400px]"
+        >
+          <h2 class="text-3xl uppercase font-semibold tracking-widest">
+            Wild Olives
+          </h2>
+          <h3 class="font-montserrat font-normal italic lowercase">
+            cheers@wildolives30a.com
+          </h3>
+          <h3
+            class="font-montserrat text-sm font-semibold italic tracking-normal"
+          >
+            (850) 399 - 5411
+          </h3>
+        </div>
+        <div class="flex flex-col w-[400px] font-raleway uppercase font-medium">
+          <a href="reservations.html" class="hover:text-oliveBrown"
+            >Reservations</a
+          >
+          <a href="our-story.html" class="hover:text-oliveBrown">Our Story</a>
+          <a href="events.html" class="hover:text-oliveBrown">Events</a>
+        </div>
+        <div class="flex flex-col w-[400px] font-raleway uppercase font-medium">
+          <a href="calendar.html" class="hover:text-oliveBrown">Calendar</a>
+          <a href="contact.html" class="hover:text-oliveBrown">Contact</a>
+          <a href="careers.html" class="hover:text-oliveBrown">Careers</a>
+        </div>
+      </div> -->
+    </footer>
 
     <script src="/js/script.js"></script>
   </body>
