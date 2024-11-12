@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="relative p-6 bg-white mr-6 md:mx-10">
+      <!-- flex container -->
+      <div class="flex items-center justify-between">
+        <!-- logo -->
+        <div class="flex justify-center">
+          <img src="/images/logo.png" class="h-[63px] w-[80px]" alt="" />
+        </div>
+        <div
+          class="hidden space-x-10 uppercase font-raleway tracking-widest font-semibold items-center md:flex"
+        >
+          <a href="#" class="hover:text-oliveBrown">Menu</a>
+          <a href="#" class="hover:text-oliveBrown">Reservations</a>
+          <a href="#" class="hover:text-oliveBrown">Events</a>
+          <a href="#" class="hover:text-oliveBrown">Contact</a>
+
+          <!-- button -->
+          <a
+            href="#"
+            class="hidden p-3 px-6 text-white bg-black rounded-sm uppercase font-raleway font-semibold tracking-widest baseline hover:bg-oliveBrown md:block"
+            >Order Online</a
+          >
+        </div>
+        <!-- hamburger icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger focus:outline-none md:hidden"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center self-end py-8 mt-10 hidden space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Menu</a>
+          <a href="#">Reservations</a>
+          <a href="#">Events</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section id="hero">
+      <div class="relative overflow-hidden text-center h-[500px] md:h-[800px]">
+        <div
+          class="absolute bg-top inset-0 bg-no-repeat bg-fixed parallax-bg md:bg-cover"
+          style="
+            background-image: url(/images/reservations/reservations-hero.jpg);
+          "
+        ></div>
+      </div>
+    </section>
+
+    <!-- hours -->
+    <section id="hours">
+      <!-- business name & address -->
+      <div class="flex flex-col justify-center text-center pt-12">
+        <h1
+          class="text-7xl font-raleway uppercase font-medium pl-4 tracking-bigWide"
+        >
+          Wild Olives
+        </h1>
+        <h2
+          class="text-xl font-raleway uppercase font-light tracking-bigMedium pl-2"
+        >
+          Bistro | Wine | Craft Cocktails
+        </h2>
+        <hr class="mx-auto h-px w-[480px] my-2 bg-black border-0" />
+        <a
+          target="_blank"
+          href="https://www.google.com/maps/place/Wild+Olives+30a/@30.3123278,-86.1019983,17z/data=!3m1!4b1!4m6!3m5!1s0x8893e5dc285d6543:0xd0a8478065d893c3!8m2!3d30.3123278!4d-86.0994234!16s%2Fg%2F11v9tbdh2j?entry=tts&g_ep=EgoyMDI0MDYxOS4xKgksMTAyMTA0NDlIAVAD"
+          ><h6 class="text-sm font-bold font-montserrat italic mb-2">
+            4771 E County Hwy 30A Unit C 103 Santa Rosa Beach, FL 32459
+          </h6></a
+        >
+      </div>
+
+      <!-- business hours & buttons -->
+      <div class="flex justify-center space-x-20 py-12">
+        <div class="flex flex-col text-center w-44">
+          <h3 class="text-xl uppercase font-raleway font-bold">Open Daily</h3>
+          <h4 class="font-leight font-montserrat">4PM - 10PM</h4>
+        </div>
+        <img src="/images/logo.png" class="h-[64px] w-[80px]" alt="" />
+        <div class="flex flex-col text-center w-44">
+          <h3 class="text-xl uppercase font-raleway font-bold">Happy Hour</h3>
+          <h4 class="font-leight font-montserrat">4PM - 6PM</h4>
+        </div>
+      </div>
+      <div class="flex flex-col w-[161px] text-center mx-auto">
+        <a
+          href="/reservations.html"
+          class="p-2 px-3 mb-3 text-white bg-black hover:bg-oliveBrown rounded-sm font-raleway uppercase font-semibold tracking-widest"
+          >Reservations</a
+        >
+      </div>
+      <div class="flex flex-col w-[100px] text-center mx-auto pb-12">
+        <a
+          href="/dinner.html"
+          class="p-2 px-3 text-white bg-black hover:bg-oliveBrown rounded-sm font-raleway uppercase font-semibold tracking-widest"
+          >Menu</a
+        >
+      </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
