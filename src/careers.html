@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <style>
+      .textShadow {
+        text-shadow: rgba(0, 0, 0, 0.498039) -1px -1px 0px,
+          rgba(0, 0, 0, 0.498039) -1px 1px 0px,
+          rgba(0, 0, 0, 0.498039) 1px 1px 0px,
+          rgba(0, 0, 0, 0.498039) 1px -1px 0px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="sticky shadow-sm top-0 z-10 p-6 bg-white pr-10 md:px-16">
+      <!-- flex container -->
+      <div class="flex items-center justify-between">
+        <!-- logo -->
+        <div class="flex justify-center">
+          <img
+            src="/images/logo.png"
+            class="h-[63px] w-[80px]"
+            alt=""
+            href="/src/index.html"
+          />
+        </div>
+        <div
+          class="hidden space-x-14 uppercase font-raleway tracking-widest font-semibold items-center md:flex"
+        >
+          <a href="/src/menu.html" class="hover:text-oliveBrown">Menu</a>
+          <a href="/src/reservations.html" class="hover:text-oliveBrown"
+            >Reservations</a
+          >
+          <a href="/src/events.html" class="hover:text-oliveBrown">Events</a>
+          <a href="/src/contact.html" class="hover:text-oliveBrown">Contact</a>
+
+          <!-- button -->
+          <a
+            href="#"
+            class="hidden p-3 px-6 text-white bg-black rounded-sm uppercase font-raleway font-semibold tracking-widest baseline hover:bg-oliveBrown md:block"
+            >Order Online</a
+          >
+        </div>
+
+        <!-- hamburger icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger focus:outline-none md:hidden"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden space-y-6 font-medium font-raleway uppercase bg-white sm:w-auto sm:self-center left-6 right-6"
+        >
+          <a href="#">Menu</a>
+          <a href="#">Reservations</a>
+          <a href="#">Events</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section id="hero">
+      <div class="relative overflow-hidden h-[520px] text-center">
+        <div
+          class="absolute bg-bottom inset-0 bg-no-repeat bg-cover bg-fixed parallax-bg"
+          style="background-image: url(/images/careers/careers-hero.jpg)"
+        >
+        <flex class="text-center relative top-44">
+            <h1 class="font-raleway text-9xl uppercase text-white font-medium tracking-bigWide pl-4 textShadow">Careers</h1>
+        </flex>
+    </div>
+      </div>
+    </section>
+
+    <!-- job form -->
+    <section id="jobForm">
+      <div class="flex justify-center text-center align-center">
+        <h2 class="text-5xl font-raleway uppercase font-semibold pl-4 tracking-bigWide">
+              Job Application
+        </h2>
+      </div>
+      <hr class="mx-auto h-px w-[575px] my-2 bg-black border-0" />
+      <div class="flex justify-center text-center align-center mb-4">
+          <h3 class="font-raleway font-sm italic tracking-wide">
+              Complete the form below.
+          </h3>
+      </div>
+  <div class="flex flex-col text-center mb-3">   
+        <form class="mx-auto mt-1">
+  <div class="flex gap-2 mb-2">
+          <input
+          type="text"
+          class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+          name="name"
+          placeholder="First name"
+          required
+            />
+          <input
+          type="text"
+          class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+          name="name"
+          placeholder="Last name"
+          required
+              />
+  </div>
+  <div class="flex gap-2 mb-2">
+        <input
+          type="phone"
+          class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+          name="email"
+          placeholder="E-mail"
+          required
+        />
+        <input
+          type="text"
+          class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+          name="phone"
+          placeholder="Phone"
+          required
+        />
+  </div>
+  <div class="flex gap-2 mb-2 pb-8">
+      <select
+      type="text"
+      class="border border-black w-[648px] h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+      name="month"
+      placeholder="Position applying for"
+      required
+    />
+        <option selected value="position">Position applying for</option>
+        <option value="server">Server</option>
+        <option value="host">Host</option>
+        <option value="serverAssistant">Server Assistant</option>
+        <option value="bartender">Bartender</option>
+        <option value="cook">Line Cook</option>
+        <option value="june">Prep Cook</option>
+        <option value="july">Dishwasher</option>
+    </select>    
+  </div>
+  <div class="flex gap-2 mb-2">
+      <input
+      type="text"
+      class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+      name="previousEmployer"
+      placeholder="Recent employer"
+      required
+        />
+      <input
+      type="text"
+      class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+      name="positionHeld"
+      placeholder="Position held"
+      required
+          />
+</div>
+<div class="flex gap-2 mb-2 pb-4">
+  <input
+  type="date"
+  class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+  name="previousEmployer"
+  placeholder="Start date"
+  required
+    />
+  <input
+  type="date"
+  class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+  name="positionHeld"
+  placeholder="End date"
+  required
+      />
+</div>
+<div class="flex gap-2 mb-2">
+  <input
+  type="text"
+  class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+  name="previousEmployer"
+  placeholder="Recent employer"
+  required
+    />
+  <input
+  type="text"
+  class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+  name="positionHeld"
+  placeholder="Position held"
+  required
+      />
+</div>
+<div class="flex gap-2 mb-2 pb-8">
+<input
+type="date"
+class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+name="previousEmployer"
+placeholder="Start date"
+required
+/>
+<input
+type="date"
+class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+name="positionHeld"
+placeholder="End date"
+required
+  />
+</div>
+<div class="flex gap-2 mb-2">
+  <input
+  type="text"
+  class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+  name="reference"
+  placeholder="Reference"
+  required
+    />
+  <input
+  type="text"
+  class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+  name="referencePhone"
+  placeholder="Phone number"
+  required
+      />
+</div>
+<div class="flex gap-2 mb-2 pb-4">
+  <input
+  type="text"
+  class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+  name="reference"
+  placeholder="Company"
+  required
+    />
+  <input
+  type="text"
+  class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+  name="referencePhone"
+  placeholder="Job title"
+  required
+      />
+</div>
+<div class="flex gap-2 mb-2">
+  <input
+  type="text"
+  class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+  name="reference"
+  placeholder="Reference"
+    />
+  <input
+  type="text"
+  class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+  name="referencePhone"
+  placeholder="Phone number"
+      />
+</div>
+<div class="flex gap-2 mb-2  pb-8">
+  <input
+  type="text"
+  class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+  name="reference"
+  placeholder="Company"
+    />
+  <input
+  type="text"
+  class="border border-black w-80 h-10 pl-2 rounded-sm focus:outline-none font-montserrat"
+  name="referencePhone"
+  placeholder="Job title"
+      />
+</div>
+<div class="flex flex-col gap-2 mb-2 pb-8">
+  <label class="font-raleway font-sm tracking-wide" for="resumeUpload">Upload Resume</label>
+  <input
+  type="file"
+  class="border border-black w-[648px] p-2 rounded-sm focus:outline-none font-montserrat"
+  name="resumeUpload"
+/>   
+</div>
+  <div class="flex items-center justify-center pb-2">
+        <textarea class="resize-none border border-black w-[648px] h-24 pl-2 pt-1 rounded-sm focus:outline-none font-montserrat " name="message" id="message" placeholder="Tell us about yourself!"></textarea>
+      </div>      
+      </form>
+      <div class="flex flex-col w-[100px] text-center mx-auto">
+        <a
+          href=""
+          class="p-2 px-3 mb-3 text-white bg-black hover:bg-oliveBrown rounded-sm font-raleway uppercase font-semibold tracking-widest"
+          >Submit</a
+        >
+      </div>
+      </div>
+    </section>  
+
+    <!-- footer -->
+    <footer class="sticky mx-auto py-16 bg-white">
+      <div class="flex justify-center mx-8 gap-3">
+        <a href="https://facebook.com/wildolives30a" target="_blank"
+          ><i
+            class="text-4xl fa-brands fa-square-facebook"
+            style="color: #000000"
+          ></i>
+        </a>
+        <a href="https://instagram.com/wildolives30a" target="_blank"
+          ><i
+            class="text-4xl fa-brands fa-square-instagram"
+            style="color: #000000"
+          ></i
+        ></a>
+        <a href="https://x.com/wildoliveswcb" target="_blank"
+          ><i
+            class="text-4xl fa-brands fa-square-x-twitter"
+            style="color: #000000"
+          ></i
+        ></a>
+        <a href="https://g.co/kgs/fFjGruF" target="_blank"
+          ><i
+            class="text-4xl fa-brands fa-square-google-plus"
+            style="color: #000000"
+          ></i
+        ></a>
+      </div>
+      <div class="pt-4 flex justify-center mx-8">
+        <p class="text-sm">&copyCopyright. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
